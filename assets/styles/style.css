@@ -4,3 +4,128 @@
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
+/* Colores de marca: azul claro (#E9F1FA), azul brillante (#00ABE4), blanco (#FFFFFF) */
+.flex{
+    display: flex;
+}
+.header{
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logoTitle{
+    align-items: center;
+    gap: 10px;
+    padding-left: 10px;
+}
+
+.header__logo{
+    width: 50px;
+}
+
+.header__title{
+    font-size: 40px;
+    color: #00ABE4;
+}
+
+.containerUserMenu{
+    align-items: center;
+    gap: 10px;
+}
+.header__user{
+    flex-direction: row;
+    align-items: center;
+    
+}
+
+.userImg{
+    object-fit: cover;
+    width: 50px;
+    border-radius: 50%;
+    
+}
+
+.containerMenuButton{
+    padding-right: 20px;
+}
+.header__menuButton{
+   
+}
+.navContainer{
+    display: none; /*No mostrar menu*/
+}
+
+
+.nav__list{
+    
+}
+.nav__item{
+    
+}
+.nav__item a{
+    
+}
+
+.cover{
+    background-color:#E9F1FA;
+    padding: 70px;
+}
+.catalogoRapido{
+    padding: 40px;
+}
+
+.CatalogoRapido__cards{
+ display: grid;
+ gap: 30px;
+ grid-template-columns: auto auto auto;
+}
+
+.CatalogoRapido__card{
+    padding: 20px;
+    border: #00ABE4 2px solid;
+    border-radius: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.tituloLibro{
+    font-size: 18px;
+    font-weight: bold;
+    width: 1px;
+}
+
+.AutorLibro{
+    font-size: 16px;
+    color: gray;
+}
+
+.CatalogoRapido__card img{
+    width: 200px;
+    height: 100%;
+    object-fit: cover;
+}
+
+.prestamosRecientes{
+
+}
+.PrestamosRecientes__cards{
+
+}
+.PrestamosRecientes__card{
+
+}
+
+.footer__contact{
+
+}
+
+.footer__social{
+
+}
+
+.RRSS-logo{
+
+}
+
