@@ -11,113 +11,115 @@
     <link href="https://fonts.googleapis.com/css2?family=Cal+Sans&family=Kumbh+Sans:wght@100..900&family=Rubik+Marker+Hatch&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="header flex">
-        <div class="header__logoTitle flex">
-            <img src="./assets/img/logoImgBlue.png" alt="Logo de la biblioteca" class="header__logo">
-            <div class="header__title">
-                <h1">BiblioGo</h1>
+    <div class="gridContainer">
+        <header class="header flex">
+            <div class="header__logoTitle flex">
+                <img src="./assets/img/logoImgBlue.png" alt="Logo de la biblioteca" class="header__logo">
+                <div class="header__title">
+                    <h1">BiblioGo</h1>
+                </div>
             </div>
+            <div class="containerUserMenu flex">
+                <div class="header__user flex">
+                    <img src="./assets/img/userImg.png" alt="Icono de usuario" class="userImg">
+                    <span>Usuario</span>
+                </div>
+                <div class="containerMenuButton">
+                    <button class="header__menuButton"><span class="mdil mdil-menu"></span></button>
+                </div>
+            </div>
+        </header>
+        <div class="navContainer">
+            <nav>
+                <ul class="flex nav__list">
+                    <li class="nav__item"><a href="#">Inicio</a></li>
+                    <li class="nav__item"><a href="#">Catalogo</a></li>
+                    <li class="nav__item"><a href="#">Prestamos Activos</a></li>
+                    <li class="nav__item"><a href="#">Usuarios</a></li>
+                    <li class="nav__item"><a href="#">Configuracion</a></li>
+                </ul>
+            </nav>
         </div>
-        <div class="containerUserMenu flex">
-            <div class="header__user flex">
-                <img src="./assets/img/userImg.png" alt="Icono de usuario" class="userImg">
-                <span>Usuario</span>
-            </div>
-            <div class="containerMenuButton">
-                <button class="header__menuButton"><span class="mdil mdil-menu"></span></button>
-            </div>
-        </div>
-    </header>
-    <div class="navContainer">
-        <nav>
-            <ul class="nav__list">
-                <li class="nav__item"><a href="#">Inicio</a></li>
-                <li class="nav__item"><a href="#">Catalogo</a></li>
-                <li class="nav__item"><a href="#">Prestamos Activos</a></li>
-                <li class="nav__item"><a href="#">Usuarios</a></li>
-                <li class="nav__item"><a href="#">Configuracion</a></li>
-            </ul>
-        </nav>
-    </div>
 
-    <main>
-        <div class="cover">
-            <h1 class="cover__title">Bienvenido al sistema de gestion de biblioteca</h1>
-            <p> Administre su coleccion de libros, realice un seguimiento de prestamos y acceda a funciones inteligentes para mejorar la experiencia de gestion de bibliteca de manera simple e intuitiva</p>
-        </div>
-        <div class="flex catalogoRapido"> 
-            <h2>Catálogo rápido</h2>
-            <div class="flex CatalogoRapido__galeria">
-                <div class="CatalogoRapido__card">
-                    <img src="https://proassetspdlcom.cdnstatics2.com/usuaris/libros/thumbs/6f04e80b-c96e-41f8-b490-fbf12abf1293/d_295_510/portada_odisea_homero_201702221812.webp" alt="Portada del libro">
-                    <h3 class="TituloLibro">Odisea</h3>
-                    <p class="AutorLibro">Homero</p>
+        <main>
+            <div class="cover">
+                <h1 class="cover__title">Bienvenido al sistema de gestion de biblioteca</h1>
+                <p> Administre su coleccion de libros, realice un seguimiento de prestamos y acceda a funciones inteligentes para mejorar la experiencia de gestion de bibliteca de manera simple e intuitiva</p>
+            </div>
+            <div class="flex catalogoRapido"> 
+                <h2>Catálogo rápido</h2>
+                <div class="flex CatalogoRapido__galeria">
+                    <div class="CatalogoRapido__card">
+                        <img src="https://proassetspdlcom.cdnstatics2.com/usuaris/libros/thumbs/6f04e80b-c96e-41f8-b490-fbf12abf1293/d_295_510/portada_odisea_homero_201702221812.webp" alt="Portada del libro">
+                        <h3 class="TituloLibro">Odisea</h3>
+                        <p class="AutorLibro">Homero</p>
+                    </div>
+                    <div class="CatalogoRapido__card">
+                        <img src="https://proassetspdlcom.cdnstatics2.com/usuaris/libros/thumbs/58f343e1-460a-4222-8f92-05c0828e8b17/d_295_510/portada_el-codigo-da-vinci_dan-brown_202310231128.webp" alt="Portada del libro">
+                        <h3  class="TituloLibro">El código Da Vinci</h3>
+                        <p class="AutorLibro">Dan Brown</p>
+                    </div>
+                    <div class="CatalogoRapido__card">
+                        <img src="https://proassetspdlcom.cdnstatics2.com/usuaris/libros/thumbs/ec37c139-bdce-4e92-b009-3e378c7696d9/d_295_510/portada_alicia-en-el-pais-de-las-maravillas_lewis-carroll_201606262121.webp" alt="Portada del libro">
+                        <h3  class="TituloLibro">Alicia en el país de las maravillas</h3>
+                        <p class="AutorLibro">Lewis Carroll</p>
+                    </div>
+                    <div class="CatalogoRapido__card">
+                        <img src="https://proassetspdlcom.cdnstatics2.com/usuaris/libros/thumbs/b216bec3-e3c1-4c19-b48c-1694ca9cd8aa/d_295_510/portada_el-hobbit_j-r-r-tolkien_202207271130.webp" alt="Portada del libro">
+                        <h3 class="TituloLibro">El Hobbit</h3>
+                        <p class="AutorLibro">J. R. R. Tolkien</p>
+                    </div>
+                    <div class="CatalogoRapido__card">
+                        <img src="https://proassetspdlcom.cdnstatics2.com/usuaris/libros/thumbs/413b3349-5e24-4a47-abab-cd056b9e679e/d_295_510/portada_el-alquimista_paulo-coelho_202201251031.webp" alt="Portada del libro">
+                        <h3  class="TituloLibro">El Alquimista</h3>
+                        <p class="AutorLibro">Paulo Coelho</p>
+                    </div>
+                    <div class="CatalogoRapido__card">
+                        <img src="https://proassetspdlcom.cdnstatics2.com/usuaris/libros/thumbs/b19b238f-17ee-4c41-a636-9bda2b21703a/d_295_510/portada_las-aventuras-de-sherlock-holmes_arthur-conan-doyle_202203181004.webp" alt="Portada del libro">
+                        <h3  class="TituloLibro">Las aventuras de Sherlock Holmes</h3>
+                        <p class="AutorLibro">Arthur Conan Doyle</p>
+                    </div>
                 </div>
-                <div class="CatalogoRapido__card">
-                    <img src="https://proassetspdlcom.cdnstatics2.com/usuaris/libros/thumbs/58f343e1-460a-4222-8f92-05c0828e8b17/d_295_510/portada_el-codigo-da-vinci_dan-brown_202310231128.webp" alt="Portada del libro">
-                    <h3  class="TituloLibro">El código Da Vinci</h3>
-                    <p class="AutorLibro">Dan Brown</p>
-                </div>
-                <div class="CatalogoRapido__card">
-                    <img src="https://proassetspdlcom.cdnstatics2.com/usuaris/libros/thumbs/ec37c139-bdce-4e92-b009-3e378c7696d9/d_295_510/portada_alicia-en-el-pais-de-las-maravillas_lewis-carroll_201606262121.webp" alt="Portada del libro">
-                    <h3  class="TituloLibro">Alicia en el país de las maravillas</h3>
-                    <p class="AutorLibro">Lewis Carroll</p>
-                </div>
-                <div class="CatalogoRapido__card">
-                    <img src="https://proassetspdlcom.cdnstatics2.com/usuaris/libros/thumbs/b216bec3-e3c1-4c19-b48c-1694ca9cd8aa/d_295_510/portada_el-hobbit_j-r-r-tolkien_202207271130.webp" alt="Portada del libro">
-                    <h3 class="TituloLibro">El Hobbit</h3>
-                    <p class="AutorLibro">J. R. R. Tolkien</p>
-                </div>
-                <div class="CatalogoRapido__card">
-                    <img src="https://proassetspdlcom.cdnstatics2.com/usuaris/libros/thumbs/413b3349-5e24-4a47-abab-cd056b9e679e/d_295_510/portada_el-alquimista_paulo-coelho_202201251031.webp" alt="Portada del libro">
-                    <h3  class="TituloLibro">El Alquimista</h3>
-                    <p class="AutorLibro">Paulo Coelho</p>
-                </div>
-                <div class="CatalogoRapido__card">
-                    <img src="https://proassetspdlcom.cdnstatics2.com/usuaris/libros/thumbs/b19b238f-17ee-4c41-a636-9bda2b21703a/d_295_510/portada_las-aventuras-de-sherlock-holmes_arthur-conan-doyle_202203181004.webp" alt="Portada del libro">
-                    <h3  class="TituloLibro">Las aventuras de Sherlock Holmes</h3>
-                    <p class="AutorLibro">Arthur Conan Doyle</p>
+                <button class="catalogoRapido__button">Ver más</button>
+            </div>
+            <div class="PrestamosRecientes">
+                <h2 class="PrestamosRecientes__title">Prestamos recientes</h2>
+                <div class=" flex PrestamosRecientes__cards">
+                    <div class=" PrestamosRecientes__card">
+                            <h3>Odisea</h3>
+                            <p>Homero</p>
+                            <span>Prestado por: Juan Perez</span>
+                            <span>Fecha de prestamo: 10/10/2023</span>
+                    </div>
+                    <div class="PrestamosRecientes__card">
+                            <h3>El código Da Vinci</h3>
+                            <p>Dan Brown</p>
+                            <span>Prestado por: Maria Gomez</span>
+                            <span>Fecha de prestamo: 12/09/2025</span>
+                    </div>
+                    <div class="PrestamosRecientes__card">
+                            <h3>Alicia en el país de las maravillas</h3>
+                            <p>Lewis Carroll</p>
+                            <span>Prestado por: Carlos Ruiz</span>
+                            <span>Fecha de prestamo: 15/09/2025</span>
                 </div>
             </div>
-            <button class="catalogoRapido__button">Ver más</button>
-        </div>
-        <div class="PrestamosRecientes">
-            <h2 class="PrestamosRecientes__title">Prestamos recientes</h2>
-            <div class=" flex PrestamosRecientes__cards">
-                <div class=" PrestamosRecientes__card">
-                        <h3>Odisea</h3>
-                        <p>Homero</p>
-                        <span>Prestado por: Juan Perez</span>
-                        <span>Fecha de prestamo: 10/10/2023</span>
+        </main>
+        <footer class="footer flex">
+            <div class="flex footer__container">
+                <div class="footer__contact">
+                    <h3>Información de contacto</h3>
+                    <p>+569 12345678</p>
+                    <p>contacto@bibliogo.com</p>
                 </div>
-                <div class="PrestamosRecientes__card">
-                        <h3>El código Da Vinci</h3>
-                        <p>Dan Brown</p>
-                        <span>Prestado por: Maria Gomez</span>
-                        <span>Fecha de prestamo: 12/09/2025</span>
+                <div>
+                    <a href="#"><span ></span> <img src="./assets/img/icons8-facebook-50.png" alt=""></a>
+                    <a href="#"><span ></span> <img src="./assets/img/icons8-x-50.png" alt=""></a>
+                    <a href="#"><span ></span> <img src="./assets/img/icons8-instagram-50.png" alt=""></a>
                 </div>
-                <div class="PrestamosRecientes__card">
-                        <h3>Alicia en el país de las maravillas</h3>
-                        <p>Lewis Carroll</p>
-                        <span>Prestado por: Carlos Ruiz</span>
-                        <span>Fecha de prestamo: 15/09/2025</span>
             </div>
-        </div>
-    </main>
-    <footer class="flex footer">
-        <div class="flex footer__container">
-            <div class="footer__contact">
-                <h3>Información de contacto</h3>
-                <p>+569 12345678</p>
-                <p>contacto@bibliogo.com</p>
-            </div>
-            <div class="footer__social">
-                <a href="#"><span class="RRSS-logo"></span> <img src="./assets/img/icons8-facebook-50.png" alt=""></a>
-                <a href="#"><span class="RRSS-logo"></span> <img src="./assets/img/icons8-x-50.png" alt=""></a>
-                <a href="#"><span class="RRSS-logo"></span> <img src="./assets/img/icons8-instagram-50.png" alt=""></a>
-            </div>
-        </div>
-        <p>&copy; 2025 BiblioGo. Todos los derechos reservados.</p>
-    </footer>  
+            <p>&copy; 2025 BiblioGo. Todos los derechos reservados.</p>
+        </footer> 
+    </div>
 </body>
 </html>
