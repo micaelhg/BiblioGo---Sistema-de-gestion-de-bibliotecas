@@ -6,14 +6,16 @@
     <title>BiblioGo | Sistema de gestion de biblioteca</title>
     <link rel="stylesheet" href="./assets/styles/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/light-font@0.2.63/css/materialdesignicons-light.min.css">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cal+Sans&family=Kumbh+Sans:wght@100..900&family=Rubik+Marker+Hatch&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="header flex">
         <div class="header__logoTitle flex">
-            <img src="./assets/img/logoImgBlackl.png" alt="Logo de la biblioteca" class="header__logo">
+            <img src="./assets/img/logoImgBlue.png" alt="Logo de la biblioteca" class="header__logo">
             <div class="header__title">
-                <h2">BiblioGo</h2>
+                <h1">BiblioGo</h1>
             </div>
         </div>
         <div class="containerUserMenu flex">
@@ -40,12 +42,12 @@
 
     <main>
         <div class="cover">
-            <h1>Bienvenido al sistema de gestion de biblioteca</h1>
+            <h1 class="cover__title">Bienvenido al sistema de gestion de biblioteca</h1>
             <p> Administre su coleccion de libros, realice un seguimiento de prestamos y acceda a funciones inteligentes para mejorar la experiencia de gestion de bibliteca de manera simple e intuitiva</p>
         </div>
-        <div class="catalogoRapido"> 
+        <div class="flex catalogoRapido"> 
             <h2>Catálogo rápido</h2>
-            <div class="CatalogoRapido__cards">
+            <div class="flex CatalogoRapido__galeria">
                 <div class="CatalogoRapido__card">
                     <img src="https://proassetspdlcom.cdnstatics2.com/usuaris/libros/thumbs/6f04e80b-c96e-41f8-b490-fbf12abf1293/d_295_510/portada_odisea_homero_201702221812.webp" alt="Portada del libro">
                     <h3 class="TituloLibro">Odisea</h3>
@@ -77,11 +79,12 @@
                     <p class="AutorLibro">Arthur Conan Doyle</p>
                 </div>
             </div>
+            <button class="catalogoRapido__button">Ver más</button>
         </div>
         <div class="PrestamosRecientes">
-            <h2>Prestamos recientes</h2>
-            <div class="PrestamosRecientes__cards">
-                <div class="PrestamosRecientes__card">
+            <h2 class="PrestamosRecientes__title">Prestamos recientes</h2>
+            <div class=" flex PrestamosRecientes__cards">
+                <div class=" PrestamosRecientes__card">
                         <h3>Odisea</h3>
                         <p>Homero</p>
                         <span>Prestado por: Juan Perez</span>
@@ -101,16 +104,18 @@
             </div>
         </div>
     </main>
-    <footer>
-        <div class="footer__contact">
-            <h3>Información de contacto</h3>
-            <p>+569 12345678</p>
-            <p>contacto@bibliogo.com</p>
-        </div>
-        <div class="footer__social">
-            <a href="#"><span class="RRSS-logo"></span> <img src="./assets/img/icons8-facebook-50.png" alt=""></a>
-            <a href="#"><span class="RRSS-logo"></span> <img src="./assets/img/icons8-x-50.png" alt=""></a>
-            <a href="#"><span class="RRSS-logo"></span> <img src="./assets/img/icons8-instagram-50.png" alt=""></a>
+    <footer class="flex footer">
+        <div class="flex footer__container">
+            <div class="footer__contact">
+                <h3>Información de contacto</h3>
+                <p>+569 12345678</p>
+                <p>contacto@bibliogo.com</p>
+            </div>
+            <div class="footer__social">
+                <a href="#"><span class="RRSS-logo"></span> <img src="./assets/img/icons8-facebook-50.png" alt=""></a>
+                <a href="#"><span class="RRSS-logo"></span> <img src="./assets/img/icons8-x-50.png" alt=""></a>
+                <a href="#"><span class="RRSS-logo"></span> <img src="./assets/img/icons8-instagram-50.png" alt=""></a>
+            </div>
         </div>
         <p>&copy; 2025 BiblioGo. Todos los derechos reservados.</p>
     </footer>  
