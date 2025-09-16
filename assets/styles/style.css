@@ -11,7 +11,6 @@ body{
 }
 p{
     font-family: "Kumbh Sans", sans-serif;
-    font-weight: <weight>;
     font-style: normal;
     font-size: 20px;
 }
@@ -89,18 +88,20 @@ h2{
     grid-area: navContainer;
     
 }
-
-main{
-    grid-area: main;
-}
-
 .nav__list{
     flex-direction: column;
-    gap: 20px;
+    justify-content: space-around;
     align-items: center;
+    list-style: none; 
 }
 .nav__item{
-    
+    border: medium solid #3575c8;
+    width: 100%;
+    padding: 30px;
+    flex
+}
+main{
+    grid-area: main;
 }
 .nav__item a{
     
