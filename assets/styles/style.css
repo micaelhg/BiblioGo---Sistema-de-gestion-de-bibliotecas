@@ -6,9 +6,7 @@
     font-weight: 400;
     font-style: normal;
 }
-body{
 
-}
 p{
     font-family: "Kumbh Sans", sans-serif;
     font-style: normal;
@@ -86,20 +84,39 @@ h2{
 .navContainer{
     display: none; /*No mostrar menu*/
     grid-area: navContainer;
-    
-}
+    height: 100%;}
 .nav__list{
     flex-direction: column;
     justify-content: space-around;
+    height: 100%;
     align-items: center;
-    list-style: none; 
+    list-style: none;
 }
 .nav__item{
-    border: medium solid #3575c8;
     width: 100%;
+    height: 100%;
     padding: 30px;
-    flex
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: #89a6c4;
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px #000000; 
+    transition: background 0.3s ease-out;
 }
+.nav__item:hover {
+    color: white;
+    background: linear-gradient(40deg, #5396e3 0%, #133868 100%);
+    box-shadow: 2px 2px 10px #000000;
+    
+}
+.nav__item a{
+    text-decoration: none;
+    color: white;
+    text-shadow: 2px 2px 5px black;
+}
+
 main{
     grid-area: main;
 }
@@ -161,6 +178,12 @@ main{
     object-fit: cover;
 }
 
+.CatalogoRapido__card img:hover{
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 2px 2px 10px #000000;
+}
+
 .catalogoRapido__button{
     background: linear-gradient(40deg, #5396e3 0%, #00367d 100%);    color: white;
     border: none;
@@ -204,13 +227,7 @@ main{
     grid-area: footer;
 }
 
-.footer__contact{
 
-}
-
-.footer__social{
-
-}
 
 @media (min-width: 768px) {
     .navContainer{
